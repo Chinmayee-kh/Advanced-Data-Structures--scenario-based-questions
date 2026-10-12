@@ -1,0 +1,24 @@
+CSE3144 Advanced Data Structures
+Part 3 - Scenario 10: Rover Firmware Queue
+
+Data structure: Pairing Heap
+Node fields: key, firstChild, nextSibling
+Random operations: 100000
+
+Randomized Test Summary
+Operations attempted: 100000
+Successful inserts: 39807
+Successful find-min checks: 19934
+Successful decrease-key operations: 20032
+Successful extract-min operations: 39807
+Total extract-min consolidation links: 288055
+Reference comparison failures: 0
+Validation: SUCCESS
+
+Complexity note:
+- Insert: O(1) actual time.
+- Meld: O(1) actual time.
+- Find-min: O(1) actual time.
+- Extract-min: O(log n) amortized in standard pairing-heap analysis.
+- Decrease-key: O(n) worst case here because parent pointers are forbidden.
+  Do not claim the Fibonacci-heap O(1) amortized decrease-key bound.

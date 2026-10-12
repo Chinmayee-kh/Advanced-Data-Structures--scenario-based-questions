@@ -1,0 +1,60 @@
+CSE3144 Advanced Data Structures
+Part 2 - Scenario 11: Station-Name Suggestions
+
+Inserting station names:
+Inserted: JAIPUR
+Inserted: JAISALMER
+Inserted: JAMMU
+Inserted: JALANDHAR
+Inserted: JABALPUR
+Inserted: JAIPUR CANTT
+Inserted: JAGDALPUR
+Exact Search Tests
+Search JAIPUR: FOUND
+Search JAIPUR CANTT: FOUND
+Search DELHI: NOT FOUND
+Prefix Suggestion Tests
+
+Prefix: JA
+Suggestions:
+1. JABALPUR
+2. JAGDALPUR
+3. JAIPUR
+4. JAIPUR CANTT
+5. JAISALMER
+
+Prefix: JAI
+Suggestions:
+1. JAIPUR
+2. JAIPUR CANTT
+3. JAISALMER
+
+Prefix: JAIP
+Suggestions:
+1. JAIPUR
+2. JAIPUR CANTT
+
+Prefix: JAL
+Suggestions:
+1. JALANDHAR
+
+Prefix: X
+Suggestions:
+No suggestions found.
+Deletion Test
+Station "JAGDALPUR" deleted successfully.
+Search JAGDALPUR after deletion: NOT FOUND
+
+Re-inserting JAGDALPUR...
+Search JAGDALPUR after reinsertion: FOUND
+
+Suggestions for JA after reinsertion:
+
+Prefix: JA
+Suggestions:
+1. JABALPUR
+2. JAGDALPUR
+3. JAIPUR
+4. JAIPUR CANTT
+5. JAISALMER
+Program completed successfully.

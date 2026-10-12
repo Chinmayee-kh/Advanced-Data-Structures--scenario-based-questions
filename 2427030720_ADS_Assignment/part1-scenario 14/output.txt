@@ -1,0 +1,55 @@
+CSE3144 Advanced Data Structures
+Part 1 - Scenario 14: The Genome Archive
+
+Experiment 1: AT-rich composition
+
+Measured frequencies:
+A: 40092 (40.09%)
+T: 40066 (40.07%)
+C: 9905 (9.90%)
+G: 9937 (9.94%)
+
+Huffman code table:
+Base    Frequency       Code
+A       40092           0
+T       40066           11
+C       9905            100
+G       9937            101
+
+Encoding completed.
+Encoded length: 179750 bits
+Average bits per base: 1.797500
+Round-trip verification: SUCCESS
+Fixed-length representation: 2.00 bits/base
+Huffman saves approximately 10.12% compared with fixed-length encoding.
+
+Experiment 2: Uniform composition
+
+Measured frequencies:
+A: 25043 (25.04%)
+T: 25025 (25.02%)
+C: 25129 (25.13%)
+G: 24803 (24.80%)
+
+Huffman code table:
+Base    Frequency       Code
+A       25043           10
+T       25025           01
+C       25129           11
+G       24803           00
+
+Encoding completed.
+Encoded length: 200000 bits
+Average bits per base: 2.000000
+Round-trip verification: SUCCESS
+Fixed-length representation: 2.00 bits/base
+Huffman provides no average bit saving over fixed-length encoding.
+
+CONCLUSION
+Fixed-length DNA encoding requires 2 bits per base.
+For the AT-rich sequence, Huffman coding should
+benefit from the unequal symbol frequencies.
+For the uniform sequence, all four bases are equally
+frequent, so Huffman coding should approach 2 bits/base.
+The actual measured values above should be used in
+the report and observation section.
